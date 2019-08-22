@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="button1">Button</button>
+    <img id="image1" src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/025.png"></img>
+</body>
+<script>
+    function mouseOver(){
+        document.getElementById('button1').style.color = "green";
+        document.getElementById('button1').style.display = "inline";
+        document.getElementById('image1').src = "https://assets.pokemon.com/assets/cms2/img/pokedex/full/133.png";
+    }
+    function mouseOut(){
+        document.getElementById('button1').style.color = "red";
+    }
+    document.getElementById('button1').onmouseover = mouseOver;
+    document.getElementById('button1').onmouseout = mouseOut;
+</script>
+</html>
