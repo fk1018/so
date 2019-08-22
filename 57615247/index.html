@@ -1,0 +1,27 @@
+<div class="buttons">
+    <div class="button">
+        <button class="myButton">Click Me</button>
+        <div class="extra">64736</div>
+    </div>
+    <div class="button">
+        <button class="myButton">Click Me</button>
+        <div class="extra">5446</div>
+    </div>
+    <div class="button">
+        <button class="myButton">Click Me</button>
+        <div class="extra">78667</div>
+    </div>
+</div>
+<script>
+    document.querySelector('.myButton').addEventListener('click', myFunction);
+
+    function myFunction() {
+
+        event.preventDefault();
+
+        close = this.nextElementSibling;
+
+        console.log(close);
+
+    }
+</script>
